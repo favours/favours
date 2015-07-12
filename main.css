@@ -1,0 +1,189 @@
+/* 
+  Made a few changes here. The most importnat is probably that when you have classes like .col-md-8, .col-md-4 
+  etc they need to be within a .row. I think you had one inside a row, but not both. 
+
+  Because Bootstrap is based on a 12 column grid, all you really need to do is make sure that the numbers add
+  up to twelve.
+
+  I also made sure that the .row was in the .container. That hierarchy is what makes most sense, and it might be
+  the only way that it will work, don't quote me on that. 
+
+  Also, we had our own .container class so that was 'competing' with Bootstraps .container. So when you introduce
+  libraries you need to consider what conflicts there may be.
+
+  The solution is always devTools, because that is going to give you the most accurate information about how the page 
+  is rendering, and you can easily see which styles take precedence. 
+
+  Lasty, tables are weird and you need to tell them to be 100% wide, because by default they'll only be as wide as they
+  need to be, that's just how tables work for some reason!
+
+  I made some other small changes just like moving the body rule to the top. Generally you will put those 'base' styles
+  first because they are the least specific, and then you will move on to more specific selectirs like classes as you go
+  down the page. This makes sense for a lot of reasons, but basically it's just a logical ordering.
+
+  Also I changed gave the h1 a class of 'main-heading' as h1 is probably a little too generic, although it is obviously fine
+  for getting something together quickly.
+
+  Added a bit of padding to the links to make the 'button target' just a little bigger. That is quite important on mobile
+  where navigation can be hard to follow if the target isn't large enough.
+
+  The issue with the sidebar was being caused by a stray curly brace. 
+
+  I also took out the display: none; for the form, and just hid it when the page loads using jQuery, probably makes more sense
+  in this case because the hide/show logic is all in the same place.
+*/  
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #404040;
+  background-color: #D8CFCF;
+}
+
+.main-nav {
+  padding: 1rem;
+  font-size: 13px;
+  background-color: white;
+  padding: 15px 10px 10px 10px;
+  
+}
+
+.nav-menu {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.main-nav li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.main-nav a {
+  color:#8E7272;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.main-heading {
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.button-group {
+  margin-top: 50px;
+   text-align: center;
+
+}
+
+.button {
+  color: white;
+  font-size: 25px;
+  padding: 20px 10px;
+  width: 300px;
+  border:none;
+  border-radius: 5px;
+}
+
+.favour  {
+  background-color: rgb(49, 199, 49);
+  margin-right: 10px;
+}
+
+.help {
+  background-color: rgb(71, 71, 200);
+  margin-left: 10px;
+}
+
+.help:hover {
+   background-color: rgb(158, 158, 218);
+}
+
+.favour:hover {
+   background-color: rgb(124, 236, 94);
+}
+
+form {
+  margin-top: 80px;
+  margin-left: 150px;
+  text-align: left;
+  display: none;
+}
+
+form p {
+  font-size: 10px;
+  font: italic;
+}
+
+.sidebar {
+  margin-top: 60px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.karma-table {
+  /* 
+    tables are weird and need to be explicitly told 
+    be 100% which is probably what you are going for
+  */
+  width: 100%; 
+  margin-top: 25px;
+  border-radius: 5px;
+  border: 2px;
+}
+
+.karma-table td, th {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.karma-table th {
+  background-color: rgb(182, 216, 185);
+}
+
+.karma-table td {
+  background-color: rgb(238, 248, 250);
+  font-size: 13px;
+}
+
+.help-someone {
+  display: none;
+}
+
+.help-someone h3 {
+  font-size: 40px;
+  margin-top:80px;
+  text-align: center;
+}
+
+.help-table {
+  width: 100%; 
+  margin-top: 25px;
+  border-radius: 5px;
+  border: 2px;
+}
+
+.help-table a{
+  background-color: rgb(74, 254, 74);
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
+
+.help-table td, th {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.help-table th {
+  background-color: rgb(191, 187, 187);
+  font-size: 18px;
+}
+
+.help-table td {
+  background-color: rgb(207, 226, 229);
+  font-size: 15px;
+}
+
