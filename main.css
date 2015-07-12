@@ -37,10 +37,15 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #404040;
   background-color: #D8CFCF;
+  background-image: url('images/michelangelo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-nav {
@@ -166,7 +171,7 @@ form p {
 }
 
 .help-table a{
-  background-color: rgb(74, 254, 74);
+  /*background-color: rgb(74, 254, 74);*/
   text-decoration: none;
   text-transform: uppercase;
   
