@@ -10,6 +10,16 @@ var main = function() {
     $('form').hide();    
   });
 
+  $('.do-it').click(function() {
+    $('.do-it-form').show(); 
+    $('.ask-form').hide();    
+  });
+
+  $('.ask').click(function() {
+    $('.ask-form').show(); 
+    $('.do-it-form').hide();    
+  });
+
 }
 
 $(document).ready(main);

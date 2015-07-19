@@ -31,10 +31,14 @@
             <button class="btn btn-primary btn-custom help">I can help!</button>
           </div>
 
-          <form>
-              <input type="text" placeholder="I'm looking for...">
-              <input type="submit" value="Submit">
-              <p>Tell us what you need help with...</p> 
+          <form class = help-form>
+              <div class="form-group"> 
+                <label for="Looking-For">Comments</label>
+                <textarea id="Looking-For" class="form-control" placeholder="Tell us what you need help with: what, where, when and how..." rows="5"></textarea>
+              </div>   
+
+              <input type="submit" value="Submit" class="btn btn-success help-submit">
+
           </form>       
 
 

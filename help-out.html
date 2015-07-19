@@ -8,7 +8,7 @@
 </head>
   <body>
  
-   <nav class="main-nav"> 
+    <nav class="main-nav"> 
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="#">How It Works</a></li>
@@ -18,41 +18,20 @@
       </ul>
     </nav>
 
+
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-         
+
           <h1 class="main-heading">Help Out</h1>
             
-
-          <div class="button-group">
-            <button class="button favour">I need a favour!</button>
-          
-            <button class="button help">I can help!</button>
-          </div>
-
-          <form>
-              <input type="text" placeholder="I'm looking for...">
-              <input type="submit" value="Submit">
-              <p>Tell us what you need help with...</p> 
-          </form>       
-
-
-          <div class="help-someone">
-            <h3>Help someone out!<br> </h3>
-            
-            
-
-            <table class ="help-table">
+          <table class="help-table">
               <thead>
                 <tr>
-                  <th>Favour desscription</th>
+                  <th>Favour description</th>
                   <th>Posted by</th>
                   <th>Category</th>
                   <th>Single/Multiple</th>
                   <th>Location</th>
                   <th>Points on offer</th>
-                  <th> </th>
                 </tr>
               </thead>
                     
@@ -64,95 +43,86 @@
                   <td>Single</td>
                   <td>Perth</td>
                   <td>25</td>
-                  <td><a href="#">Help out</a></td>
-                </tr>
-                <tr>
-                  <td>Like my Facebook page!</td>
-                  <td>Joey</td>
-                  <td>Online Task</td>
-                  <td>Multiple</td>
-                  <td>Remote</td>
-                  <td>1</td>
-                  <td><a href="#">Help out</a></td>
-                </tr>
-                <tr>
-                  <td>Complete customer survey for my startup (5 minutes)</td>
-                  <td>NewCompany99</td>
-                  <td>Online Task</td>
-                  <td>Multiple</td>
-                  <td>Remote</td>
-                  <td>5</td>
-                  <td><a href="#">Help out</a></td>
-                </tr>
-                <tr>
-                  <td>Proof-read my 1,000 word assignment</td>
-                  <td>StudentMe</td>
-                  <td>Skills</td>
-                  <td>Single</td>
-                  <td>Remote</td>
-                  <td>8</td>
-                  <td><a href="#">Help out</a></td>
-                </tr>
-                <tr>
-                  <td>I need someone with a Ute to help move a fridge in Leederville</td>
-                  <td>HelMe55</td>
-                  <td>Personal Services</td>
-                  <td>Single</td>
-                  <td>Leederville</td>
-                  <td>10</td>
-                  <td><a href="#" class="btn btn-primary">Help out</a></td>
                 </tr>
               </tbody>
-             </table>     
-          </div> <!-- end .help-someone -->
+          </table>     
+         
+
+          <div class="button-group">
+             <button class="btn btn-success btn-custom do-it">I'll do it!</button>
+          
+             <button class="btn btn-primary btn-custom ask">Ask a question...</button>
+          </div>
+
+       
+          <div class="row">
+ 
+                <form class='do-it-form col-md-6'>
+
+                      <div class="form-group">
+                        <label for"name">Name</label>
+                        <input id="name" type="text" class="form-control" placeholder="Full Name">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="text" class="form-control" placeholder="name@domain.com...">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input id="password" type="text" class="form-control" placeholder="*******">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="password2">Re-enter Password</label>
+                        <input id="password"2 type="text" class="form-control" placeholder="*******">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" class="form-control" placeholder="Comments" rows="5"></textarea>
+                      </div>    
+
+                      <input type="submit" value="Submit" class="btn btn-success btn-lg">
+            
+                </form> <!-- end .col-md-6 -->
 
 
+                <form class='ask-form col-md-6'>
+                
+                      <div class="form-group">
+                        <label for"name">Name</label>
+                        <input id="name" type="text" class="form-control" placeholder="Full Name">
+                      </div>
 
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="text" class="form-control" placeholder="name@domain.com...">
+                      </div>
 
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input id="password" type="text" class="form-control" placeholder="*******">
+                      </div>
 
-        </div> <!-- end .col-md-9 -->
+                      <div class="form-group">
+                        <label for="password2">Re-enter Password</label>
+                        <input id="password"2 type="text" class="form-control" placeholder="*******">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="question">Question</label>
+                        <textarea id="question" class="form-control" placeholder="Questions" rows="5"></textarea>
+                      </div>    
+
+                      <input type="submit" value="Submit" class="btn btn-primary btn-lg">
+                      
+                </form> <!-- end .col-md-6 -->      
+      
+          </div>
       
 
-        <div class="col-md-3">    
-          <div class="sidebar">
-            <!-- <h3>Karma Leaderboard:<br>our top helpers</h3>
-
-            <table class ="karma-table">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Karma points</th>
-                  <th>Member since</th>
-                </tr>
-              </thead>
-                    
-              <tbody>
-                <tr>
-                  <td>Jim</td>
-                  <td>15</td>
-                  <td>Jun 2015</td>
-                </tr>
-                <tr>
-                  <td>Rafael Kimberley-Bowen</td>
-                  <td>12</td>
-                  <td>July 2015</td>
-                </tr>
-                <tr>
-                  <td>Jane Doe</td>
-                  <td>11.5</td>
-                  <td>Jun 2015</td>
-                </tr>
-                <tr>
-                  <td>Alpha Beta</td>
-                  <td>5</td>
-                  <td>May 2015</td>
-                </tr>
-              </tbody>
-             </table>      -->
-          </div> <!-- end .sidebar -->
-        </div> <!-- end .col-md-3 -->
-
-      </div>
     </div> <!-- end .container -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

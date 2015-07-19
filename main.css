@@ -37,32 +37,19 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-
-=======
 html, body {
   height: 100%;
 }
->>>>>>> daa4ea29a1a245ad149fcbed46ac485fd506dff0
+
 
 body {
   font-family: 'Roboto', sans-serif;
   color: #404040;
   margin: 0 0 100px 0;
   background-color: #D8CFCF;
-<<<<<<< HEAD
-  background-image: url('images/michelangelo.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-=======
   background-image: url('img/michelangelo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-h3 {
-  color: rgb(244, 244, 244);
->>>>>>> daa4ea29a1a245ad149fcbed46ac485fd506dff0
 }
 
 .main-nav {
@@ -75,9 +62,6 @@ h3 {
   align-items: center;
 }
 
-.nav-menu {
-
-}
 
 .main-nav li {
   display: inline-block;
@@ -95,6 +79,11 @@ h3 {
   letter-spacing: -1px;
   text-align: center;
 }
+
+h3 {
+  color: rgb(244, 244, 244);
+}
+
 
 .button-group {
   margin-top: 50px;
@@ -121,20 +110,47 @@ h3 {
   outline: none;
 }
 
-.favour:focus, .favour:active, .help:focus, .help:active {
+.help-submit {
+  margin-left: 10px;
   outline: none;
 }
 
-form {
+.do-it, .ask {
+  outline: none;
+}
+
+.favour:focus, .favour:active, .help:focus, .help:active, .do-it:focus, .do-it:active, .ask:focus, .ask:active {
+  outline: none;
+}
+
+.help-form {
   margin-top: 80px;
   margin-left: 150px;
   text-align: left;
   display: none;
+  color: rgba(22, 227, 68, 0.69);
 }
 
-form p {
+.help-form p {
   font-size: 10px;
   font: italic;
+}
+
+.do-it-form {
+  font-size: 18px;
+  color: rgba(22, 227, 68, 0.69);
+  display: none;
+}
+
+.ask-form {
+  font-size: 18px;
+  color: #337AB7;
+  display: none;
+}
+
+.do-it-form input, .do-it-form textarea, .ask-form input, .ask-form textarea {
+  font-size: inherit;
+  height: auto;
 }
 
 .sidebar {
@@ -181,22 +197,31 @@ form p {
   text-align: left;
 }
 
-.karma-table th {
-  /*background-color: rgb(182, 216, 185);*/
-}
 
 .karma-table td {
   font-size: 13px;
 }
 
+
+.karma-table th:first-child {
+  border-top-left-radius: 5px;
+}
+
+.karma-table th:last-child {
+  border-top-right-radius: 5px;
+}
+
+
 .help-someone {
   display: none;
 }
+
 
 .help-someone h3 {
   font-size: 40px;
   margin-top:80px;
   text-align: center;
+  color: rgb(51, 122, 183);
 }
 
 .help-table {
@@ -207,10 +232,8 @@ form p {
 }
 
 .help-table a{
-  /*background-color: rgb(74, 254, 74);*/
   text-decoration: none;
   text-transform: uppercase;
-  
 }
 
 .help-table td, th {
@@ -219,12 +242,10 @@ form p {
 }
 
 .help-table th {
-/*  background-color: rgb(191, 187, 187);
-*/  font-size: 18px;
+  font-size: 18px;
 }
 
 .help-table td {
-/*  background-color: rgb(207, 226, 229);
-*/  font-size: 15px;
+  font-size: 15px;
 }
 
